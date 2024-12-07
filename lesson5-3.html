@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+    </head>
+    <body>
+
+        <div class="header">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+             <a href="index.html" class="title">CodeCrumbs</a>
+             <div class="header-right" style="margin-top: 15px;">
+            <a href="index.html">Home</a>
+            <a href="lesson1.html">Lesson 1</a>
+            <a href="lesson2.html">Lesson 2</a>
+            <a href="lesson3.html">Lesson 3</a>
+            <a href="lesson4.html">Lesson 4</a>
+            <a class="active" href="lesson5-1.html">Lesson 5</a>
+          </div>
+        </div>
+        
+        <div class="intro">
+            <div class="text-box" style="margin-left: 50px;">
+                <h1>LESSON 5 (part3):</h1>
+                <h1>Building a Network</h1><br>
+                <p>Building a network involves establishing connections between devices, systems, or individuals to enable communication and data exchange. This process can be physical, such as wiring computers through routers and switches, or virtual, through software configurations and cloud services. A well-structured network ensures reliable access, security, and efficient sharing of resources across a local area network (LAN) or a wide area network (WAN). It requires careful planning, proper hardware, and security measures to support the desired functionality and scalability.</p>
+            </div>
+            <img src="part 1/computer network.jpg" alt="computer network" class="img">
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <h3>TABLE OF CONTENTS</h3>
+            <br><b><a href="#heading1"> Connecting to the Internet </a>
+            <a href="#heading2"> Peer-to-Peer </a></b>
+            <i><a href="#sub1"> > Set-up P2P Connection </a>
+                <a href="#sub2"> > Set-up IP Address </a>
+                <a href="#sub3"> > Checking Connectivity </a>
+                <a href="#sub4"> > Verification </a>
+                <a href="#sub5"> > Error Results in Pinging </a></i>
+            <b><a href="#heading3"> Switched-based Network </a></b>
+            <i><a href="#sub6"> > Set-up Network </a>
+                <a href="#sub7"> > Set-up IP Address </a>
+                <a href="#sub8"> > Checking Connectivity </a></i>
+            <b><a href="#heading4"> Wireless LAN </a></b>
+            <i><a href="#sub9"> > Set-up Wireless LAN </a>
+                <a href="#sub10"> > Sharing Options on LAN </a></i>
+            <b><a href="#heading5"> IP Address </a></b>
+            <i><a href="#sub11"> > IP Address Functions </a>
+                <a href="#sub12"> > Private vs. Public IP </a>
+                <a href="#sub13"> > IP Address </a>
+                <a href="#sub14"> > Address Classes </a>
+                <a href="#sub15"> > Subnet Mask </a>
+                <a href="#sub16"> > Gateway Address </a></i>
+        </div>
+
+        <div id="myNetnav" class="netnav">
+            <a href="lesson5-1.html" id="part1">part  1</a>
+            <a href="lesson5-2.html" id="part2">part  2</a>
+            <a style="background-color: white; color: #a832f7;" href="lesson5-3.html" id="part3">part  3</a>
+        </div>
+
+        <div class="text-box2">
+            <br><br>
+            <h1 id="heading1">Connecting to the Internet: Wireless & Ethernet</h1>
+            <pre>
+- There are several methods to connect to the Internet, with wireless and wired (Ethernet) being the most common.
+
+<b>Wireless Network Connection:</b>
+- Secured Networks: Most Wi-Fi networks are secured with a password. To connect to a secured network, you'll need to obtain the password from the Network Administrator
+or designated person (e.g., at a coffee shop or hotel).
+- Unsecured Networks: Some networks are open, meaning anyone can connect without a password, like in public places (e.g., coffee shops).
+- Signal Strength: A secure network is often marked with a shield icon on the signal strength indicator. Stronger signals are represented by more radio wave bars, while
+fewer bars indicate weaker signals.
+
+<b>Wired Network Connection:</b>
+- Wired connections (Ethernet) are indicated by a different icon compared to wireless networks. To connect, simply select the desired network and enter a password if needed.
+- In both cases, once you identify the network, you can select Connect and proceed with the necessary steps.
+
+        <i>Notes:
+        * Before connecting, make sure your wireless adapter is turned on – a radio icon usually represents this.
+        * Some computers will require a keyboard command; typically the function key and an embedded key to enable it, or a simple dedicated wireless button.
+        </i>
+            </pre>
+            <img src="part 3/ethernet.png" class="img2">
+            <br><br><p style="text-align: center;">Here are some Windows 10 networking status icons and their meaning:</p>
+            <img src="part 3/icons.png" class="img2">
+
+            <br><hr><br>
+            <div>
+                <div>
+                <h1 id="heading2">(P2P) Peer-to-Peer Network Connection</h1>
+                <pre>
+- If you want to set up a P2P network between two or more machines, Windows 10 makes it easy.
+- Setting up a P2P network makes it possible to share data with other PCs, or even a printer via the network.
+                </pre>
+
+<div class="cardi">
+                <h2 id="sub1">How to Set-up Peer-toPeer Connection:</h2>
+                <div class="card3">
+                    <h3>Step 1:</h3>
+                    <pre>
+- A network interface or Local Area Network (LAN) adapter for each computer is needed.
+- The same manufacturer and model of network card is preferred.
+- The sample below is a typical Tower Type Computer with NIC ready.                        
+                    </pre>
+                    <div class="container">
+                        <img src="part 3/1/step1a.png" class="img4">
+                        <img src="part 3/1/step1b.png" class="img2">
+                    </div>
+                </div>
+
+                <br>
+                <div class="card3">
+                    <h3>Step 2:</h3>
+                    <pre>
+- Cabling that is supported by the network cards is needed.
+- Since we will be setting up two the same or similar devices, a Crossover Cable will be the best choice.
+- Peer-to-peer connection can be made possible using a CAT5, CAT5e or CAT6 (Ethernet) Crossover Cable between two computers.
+- Refer to the diagram that is shown below:                       
+                    </pre>
+                    <img src="part 3/1/step2.png" class="img2">
+                </div>
+
+                <br>
+                <div class="card3">
+                    <h3>Step 3:</h3>
+                    <pre>
+- To ensure that both machines can see each other, please make sure that both machines are in the same Workgroup.
+
+Refer to the following steps:
+                        1. Press Windows key+X to bring up the quick access menu
+                        2. Select System
+        <img src="part 3/1/step3a.png" class="img2">
+
+                        3. Then look for System Info
+        <img src="part 3/1/step3b.png" class="img2">
+
+                        4. Click for Change Settings button
+        <img src="part 3/1/step3c.png" class="img2">
+
+                        5. Then click Change button and enter WORKGROUP name
+        <img src="part 3/1/step3d.png" class="img2">                    
+                    </pre>
+                </div>
+
+                <pre>
+<i>
+    Important Notes:
+    * Repeat the same steps on the other computer you intend to network together
+    * Restart when prompted
+    * Make sure both machines are connected
+</i>
+                </pre>
+                </div>
+</div>
+
+<div class="cardi">
+                <h2 id="sub2">Setting Up the IP Address of Each Computer</h2>
+                    <div class="card3">
+                        <pre>
+1. Go to START then look for CONTROL PANEL or click the ICON as shown.
+                        </pre>
+                        <img src="part 3/2/step1.png" class="img2">
+                    </div>
+
+                    <br>
+                    <div class="card3">
+                        <pre>
+2. Look for NETWORK AND INTERNET CONNECTION (if using category view); NETWORK CONNECTIONS (if using classic view).
+                        </pre>
+                    </div>
+
+                    <br>
+                    <div class="card3">
+                        <pre>
+3. Once inside the Local Area Connection dialog window, click on the Local Area Connection Icon (Ethernet), then click Properties.
+                        </pre>
+                        <img src="part 3/2/step3.png" class="img2">
+                    </div>
+
+                    <br>
+                    <div class="card3">
+                        <pre>
+4. Local Area Connection (Ethernet) Properties Dialog box will appear.  Select and double click on the Internet Protocol Version 4 (TCP/IPv4)
+                        </pre>
+                        <img src="part 3/2/step4.png" class="img2">
+                    </div>
+
+                    <br>
+                    <div class="card3">
+                        <pre>
+5. Internet Protocol Version 4 (TCP/IPv4) Properties Dialog box appears. Choose the ‘Use the following IP Address’ option and enter or input the following:
+                        </pre>
+                        <img src="part 3/2/step5a.png" class="img2">
+                        <img src="part 3/2/step5b.png" class="img2">
+                    </div>
+
+                    <br>
+                    <div class="card3">
+                        <pre>
+6. Click OK to finish the Set Up.
+
+            <i>Important Notes:
+            - Make sure that the same procedure is done properly with the other computer.
+            - If you are configuring PC 2, use the following:
+    </i>
+    <img src="part 3/2/step6a.png" class="img2">
+
+            Illustration of a Peer-to-Peer Network Setup:
+    <img src="part 3/2/step6b.png" class="img2">
+                        </pre>
+                    </div>
+</div>
+
+<div class="cardi">
+            <h2 id="sub3">Checking The Connectivity of the Two Computers</h2>
+            <pre>
+- To diagnose network issues and verify connectivity between computers, various tools and protocols are used.
+
+<h3>ICMP (Internet Control Message Protocol)</h3>
+- A network layer protocol used by devices to diagnose network communication issues.
+- Function: ICMP helps determine if data is reaching its destination on time and communicates network issues back to the source.
+- Key Messages: It sends control messages such as "destination network unreachable," "source route failed," and "source quench."
+- Packet Structure: It uses an 8-byte header with a variable-size data section.
+
+
+<b>Network Diagnostic Commands</b>
+    <h3>1. IPCONFIG</h3>
+    - A command-line utility in Windows that displays TCP/IP network configuration.
+    - Function: It shows IPv4 and IPv6 addresses, subnet mask, and default gateway. It also refreshes DHCP and DNS settings.
+    - Usage: Running ipconfig without parameters displays the network configuration for all adapters.
+
+    <h3>2. PING</h3>
+    - A network utility to test if a particular host is reachable across an IP network and measure the round-trip time for packets.
+    - Results:
+        - Reply From: Indicates a successful connection.
+        - Request Timed Out: Indicates failure to connect.
+    
+    <h3>3. (CMD) Command Prompt</h3>
+    - The default command-line interface for Windows operating systems.
+    - Function: Allows users to run commands and perform system management tasks.
+    - Usage: Opened by typing cmd in the Windows search bar.
+
+    <h3>4. DOS Prompt</h3>
+    - A command-line indicator in MS-DOS (Microsoft Disk Operating System).
+    - Default Prompt: The current drive letter followed by a greater-than sign (C:\> for the C drive).
+            </pre>
+</div>
+
+<div class="cardi">
+            <h2 id="sub4">Verification</h2>
+            <div class="card3">
+                <pre>
+1. Use PC 1,  click the START Menu, look for RUN (or type in CMD at Windows Search Bar)                   
+                </pre>
+            </div>
+
+            <br>
+            <div class="card3">
+                <pre>
+2. Type in ‘command’ or ‘cmd’ and click OK. Refer to the Sample illustration below:                   
+                </pre>
+                <div class="container">
+                    <img src="part 3/3/step2a.png" class="img2">
+                    <img src="part 3/3/step2b.png" class="img2">
+                </div>
+                <img src="part 3/3/step2c.png" class="img2">
+            </div>
+
+            <br>
+            <div class="card3">
+                <pre>
+3. At the MS DOS Prompt: C:\> type IPCONFIG and press ENTER. Refer to the Sample Illustration below:                  
+                </pre>
+                <img src="part 3/3/step3.png" class="img2">
+            </div>
+
+            <br>
+            <div class="card3">
+                <pre>
+4. You can now see the IP Configuration of Computer 1 (PC 1), then do the same steps with Computer 2 (PC 2).                 
+                </pre>
+            </div>
+
+            <br>
+            <div class="card3">
+                <pre>
+5. At the MS DOS Prompt:
+C:\> type PING [IP_Address_of_PC2_Here] and press ENTER (if you are using PC 1);
+C:\> type PING [IP_Address_of_PC1_Here] and press ENTER (if you are using PC 2)
+Refer to the Sample Illustration below:
+<img src="part 3/3/step5.png" class="img2">
+<i>
+            * Reply From – the result if the computer establishes a connection with the other computer
+            * Request Timed Out. – the result if the computer has no connection from the other computer.
+</i>
+                </pre>
+            </div>
+</div>
+
+<div class="cardi">
+        <h2 id="sub5">Error Results in Pinging</h2>
+        <h3>Request timed out</h3>
+        <pre>
+- It means that the ICMP packet reached from one host to the other host but the reply could not reach to the requesting host.
+- There may be more packet loss or some physical issues.            
+        </pre>
+
+        <br>
+        <h3>Destination host unreachable</h3>
+        <pre>
+- It means there is no proper route defined between two hosts.
+- There are many possible reasons for getting a “destination host unreachable” error, including things as simple as erroneously connected cables or an overly aggressive firewall.        
+        </pre>
+
+        <br>
+        <h3>General failure</h3>
+        <pre>
+- The Command Prompt does not provide any additional information as to exactly what failed or why the computer failed to run the ping command.
+- That being the case, there are a ton of different possible causes for this problem.      
+        </pre>
+        <div class="container">
+            <img src="part 3/3/fail1.png" class="img2">
+            <img src="part 3/3/fail2.png" class="img2">
+        </div>
+</div>
+
+<br><hr><br>
+<div>
+    <h1 id="heading3">Building a Switched-Based Network</h1>
+    <pre>
+- When expanding an existing computer network or building a new one, one of the many devices that can be used in the process is an Ethernet Switch.
+- A Switch is a simple device that connects multiple computers together and to the rest of the network, allowing communication to occur between all connected devices.
+
+The following questions should be addressed first before setting up the network:
+- How many computers are you going to connect to?
+- Do you have a cable run already or are you going to terminate one for yourself?
+- What is the distance between computers in the network?
+- What type of operating system are you going to use in your network?
+- These are some of the common questions that would be answered first so that no problems may arise during the installation.        
+    </pre>
+
+    <div class="cardi">
+        <h2 id="sub6">To Set-up a Network Using a Switch</h2>
+        <div class="card3">
+            <pre>
+1. Be ready with the cable that you are going to use. Since we will be using a switch, we are connecting two different devices, so a STRAIGHT THROUGH cable is advisable.
+            </pre>
+            <div class="container">
+                <img src="part 3/4/1a.png" class="img2">
+                <img src="part 3/4/1b.png" class="img2">
+            </div>
+        </div>
+
+        <br>
+        <div class="card3">
+            <pre>
+2. Set up the switch in the middle of each computer; do not forget to power it up.  
+            </pre>
+        </div>
+
+        <br>
+        <div class="card3">
+            <pre>
+3. Connect the cable of each computer’s NIC to the Switch ports.
+            </pre>
+            <img src="part 3/4/3.png" class="img2">
+        </div>
+
+        <br>
+        <div class="card3">
+            <pre>
+4. Power up your computer and wait for several seconds for the booting process.
+            </pre>
+        </div>
+
+        <br>
+        <div class="card3">
+            <pre>
+5. Configure the TCP/IP Settings of each computer and give the individual IP Address and Subnet Mask.  
+            </pre>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <div class="cardi">
+            <h2 id="sub7">Setting Up the IP Address of Each Computer</h2>
+            <pre>
+- NOTE: The procedure is similar to Peer-to-Peer Network Setup but you are going to configure more computers.
+
+Refer to the Sample Diagrams as follows:
+    <div class="container">
+<img src="part 3/switch-based1.png" class="img2">
+<img src="part 3/switch-based2.png" class="img2">
+    </div>
+            </pre>
+        </div>
+
+        <div class="cardi">
+            <h2 id="sub8">Checking The Connectivity of the Computers</h2>
+            <pre>
+The procedure is similar to Peer-to-Peer Network Setup.
+
+<i>
+Important Notes:
+- To check whether your network is working, each computer should PING each other.
+- The result should be Reply From (the result if the computer establishes a connection with the other computer).
+- If the result says Request Timed Out (the result if the computer has no connection from the other computer), you have to troubleshoot the network by repeating the procedure.
+- If the IP Address is still the default IP address of the previous set up or coming from DHCP, you can change this by typing the commands:
+    - IPCONFIG /RELEASE and IPCONFIG /RENEW.
+    - You can use either small letters or all capital letters.
+</i>
+<img src="part 3/checking.png" class="img2">
+            </pre>
+        </div>
+        
+        <br><hr><br>
+        <div>
+            <h1 id="heading4">How To Set Up A Wireless LAN?</h1>
+            <pre>
+- A WLAN is a network that typically covers a small area, such as a home, office, or public places like libraries, coffee shops, or parks.
+
+Advantages of WLAN:
+- Lower Setup Cost: WLANs are generally more affordable to set up than wired networks.
+- Ease of Setup: Modern wireless routers are easy to install due to their plug-and-play functionality.
+
+Setup Process:
+- Buy a Wireless Router: Popular brands include Linksys, Belkin, and D-Link.
+- Compatibility: The router should support various wireless cards and allow easy connection for users with different devices, including older
+wireless protocols. Most modern routers are backward compatible.                
+            </pre>
+
+            
+<div class="cardi">
+    <h2 id="sub9">Set Up a Wireless Local Area Network</h2>
+    <div class="card3">
+        <h3>Step 1: Equip yourself</h3>
+        <pre>
+- A wireless LAN essentially consists of two main components:
+    A. Wireless-Enabled Devices (integrated or add-in cards for desktop and notebook PCs and handheld devices)   
+    <img src="part 3/5/step1a.PNG" class="img2">
+    
+    B. Wireless Access Points (or routers): before you can set up your wireless network, you should acquire at least one wireless access point
+    <img src="part 3/5/step1b.PNG" class="img2">
+
+    <i>
+    Important Notes:
+    - Most wireless access points can pick up signals within 150 feet or more, although many factors, such as dense walls and
+    furniture, can reduce the actual range.
+    - You might need two or more access points if your office space is very large.
+    - Then, be sure that every user who will connect to the network has a wireless-enabled device.
+    - In addition, you must also take proper security precautions against open access and unauthorized usage.
+    </i>
+        </pre>
+    </div>
+
+    <br>
+    <div class="card3">
+        <h3>Step 2: Set-up the physical topology of the wireless LAN (WLAN)</h3>
+        <pre>
+Set up and turn on the power for the wireless network router or another networking device.
+Follow the instructions provided by the manufacturer to connect a broadband cable or DSL modem to the router and set up security for the wireless network.
+
+<i>Note:
+- In some cases, the modem and router are combined into one device, and might be referred to as a wireless access point.
+</i>
+<b>Add Access Point to an existing LAN</b>
+- Connect the access point to your wired LAN with an Ethernet cable.
+- Use the software that ships with the access point to assign an appropriate network name and an encryption key.
+
+<img src="part 3/5/step2.png" class="img2">
+        </pre>
+    </div>
+
+    <br>
+    <div class="card3">
+        <h3>Step 3: Configure the Wireless Router</h3>
+        <pre>
+How to connect to a Wi-Fi network using Control Panel
+                        1. Open Control Panel
+                        2. Click on Network and Internet
+                        3. Click on Network and Sharing Center
+                        4. Click the Set up a new connection or network
+        <img src="part 3/5/step3-4.png" class="img2">
+
+                        5. Select the Manually connect to a wireless network option 
+        <img src="part 3/5/step3-5.png" class="img2">
+
+                        6. Click the Next button
+                        7. Enter the network SSID name
+                        8. Use the drop-down menu to select the Security type (usually, the security type is WPA2-Personal)
+                        9. Enter the network security key (password)
+                        10. Check the Start this connection automatically option
+        <img src="part 3/5/step3-10.png" class="img2">
+
+                        11. Click the Next button
+                        12. Click the Close button
+                        13. Once you complete these steps, your device will now connect automatically to the network you specified
+        </pre>
+    </div>
+
+    <br>
+    <div class="card3">
+        <h3>Step 4. Connect To The Local Wireless Network</h3>
+        <pre>
+<i>
+Note:
+- On notebook computers, make sure the wireless device is enabled.
+- For most notebook computers, there is a LED light or a light on a keyboard key with this symbol that glows blue when the wireless device is turned on and enabled,
+and glows orange when off or disabled.
+- Some notebook computer models might use a different color scheme.
+</i>          
+                        1. In Windows, click the network connection icon in the system tray.
+        <img src="part 3/5/step4-1.png" class="img2">
+
+                        2. In the network list, select the wireless network you want to connect to, and then click Connect.
+        <img src="part 3/5/step4-2.png" class="img2">
+
+                        3. Enter the network passphrase (or security key) for the selected wireless network, and then click Next; the computer
+                        connects to the network.
+                        4. Click OK; then repeat these steps for each computer in the network.
+                                <i>Note:
+                                -Check connectivity by using the PING command.
+                                -Troubleshoot if necessary using IPCONFIG, IPCONFIG /RELEASE, IPCONFIG /RENEW commands</i>
+
+        </pre>
+    </div>
+
+    <br>
+    <div class="card3">
+        <h3>Step 5: Share drives, folders, and files on a local network</h3>
+        <pre>
+- As mentioned, the main purpose of networking is to share resources may it be hardware, software or data.
+- To achieve this goal, you must learn how to share these resources using the steps below.
+
+<i>Note:
+Turn on network discovery and file and printer sharing on a local network
+Follow the following steps to open advanced sharing settings and turn on network discovery and file and printer sharing:</i>
+
+
+                        1. In Windows, right-click the network connection icon in the system tray
+                        <img src="part 3/5/step5-1.png" class="img2">
+
+                        2. Click Open Network and Internet Settings.
+                        <img src="part 3/5/step5-2.png" class="img2">
+
+                        3. On the network status page, scroll down and click Network and Sharing Center.
+                        <img src="part 3/5/step5-3.png" class="img2">
+
+                        4. In the left pane, click Change advanced sharing settings.
+                        <img src="part 3/5/step5-4.png" class="img2">
+
+                        5. Select both Turn on network discovery and Turn on file and printer sharing in the sharing profile you want to change.
+                                <i>Note: There are sharing settings for your Private profile, Guest or Public profile, and All networks.</i>
+                        <img src="part 3/5/step5-5.png" class="img2">
+
+                        6. Click Save changes.
+        </pre>
+    </div>
+</div>
+
+<div class="cardi">
+    <h2 id="sub10">Set Sharing Options and Permissions for Specific Files or Folders on a LAN</h2>
+    <pre>
+- Set sharing options of files and non-public folders from the computer whose content you want to share.
+
+To share non-public folders, do the following:
+        <i>Note: Microsoft retired the Homegroup feature in Windows 10 April 2018 Update.</i>
+
+                        1. In Windows, search for and open File Explorer.
+                        2. Browse to the folder you want to share.
+                        3. Right-click on the folder, select Give access to, and then click Remove access (to remove sharing options) or Specific people
+                        (to add new sharing permissions).
+                        <img src="part 3/6/step3.png" class="img2">
+
+                        4. If you choose Specific people, the File Sharing window displays.
+                        5. Click the down arrow and select the user you want to share with. If the user is not listed, type the user
+                        name or email address, and then click Add.
+                        <img src="part 3/6/step5.png" class="img2">
+
+                        6. Click the down arrow under the Permission Level to set the permission level for each user or group.
+                        <img src="part 3/6/step6.png" class="img2">
+
+                        7. Click Share.
+    </pre>
+</div>
+        </div>
+
+        <br><hr><br>
+        <div>
+            <h1 id="heading5">Basic IP Addressing</h1>
+            <pre>
+- IP addressing is important because it facilitates the primary function of the Internet Protocol (IP) — the delivery of datagram across an internetwork.
+- IP Addressing scheme makes it possible for computers to “find each other” online and exchange information.
+- Understanding this in more detail requires us to examine a few different but essential issues related to how IP and its addresses operate.                
+            </pre>
+
+            <div class="cardi"><h2 id="sub11">IP Address Functions: Identification and Routing</h2>
+            <pre>
+There are actually two different functions of the IP address namely:
+
+<h3>Network Interface Identification</h3>
+- Internet Protocol requires an address to route traffic to the correct destination.
+- Just like a postal address at your house helps the post office deliver mail to a specific destination, an IP address is used by the routers to deliver your email and your web data to you.
+
+<h3>Routing</h3>
+- When the source and destination of an IP datagram are not on the same network, the datagram must be delivered “indirectly” using intermediate systems, a process called routing.
+- The IP address is an essential part of the system used to route datagram.                
+            </pre></div>
+
+            <div class="cardi"><h2 id="sub12">Private IP Address Versus Public IP Address</h2>
+            <pre>
+What is Public IP Address?
+- An Internet Protocol (IP) address that is designated for use in a public domain**, such as the Internet.
+
+What is Private IP Address?
+- These addresses can be used on a private network, but they are not routable through the public Internet.
+- This not only creates a measure of much-needed security, but it also conveniently saves valuable IP address space.
+
+        <i>Note:
+        - These are known as **private IP addresses** and are found in the following ranges:
+                > From 10.0.0.0 to 10.255.255.255
+                > From 172.16.0.0 to 172.31.255.255
+                > From 192.168.0.0 to 192.168.255.255 </i>               
+            </pre></div>
+
+            <div class="cardi"><h2 id="sub13">IP Address</h2>
+            <pre>
+- An IP (Internet Protocol) address is a unique identifier for a node or host connection on an IP network.
+- An IP address is a 32-bit binary number
+        - usually represented as 4 decimal values
+        - each decimal value is representing 8 bits, in the range 0 to 255 (known as octets)
+        - separated by decimal point (.)
+        - known as "dotted decimal" notation
+        - Example: 192.168.1.1
+
+IP Addresses are useful if it is viewed in its binary form as follows:
+
+<img src="part 3/7/1.png" class="img2">
+
+Every IP address consists of two parts:
+- one identifying the network
+- one identifying the host
+
+The Class of the address and the subnet mask determine which part belongs to the network address and which part belongs to the host address.
+
+<img src="part 3/7/2.png" class="img2">
+            </pre></div>
+
+            <div class="cardi"><h2 id="sub14">Address Classes</h2>
+            <pre>
+- There are five (5) different address classes.
+- You can determine which class any IP address is in by examining the first 4 bits of the IP address or the first octet.
+
+<img src="part 3/7/3.png" class="img2">
+
+Network ID determines the Network portion (N) and the Host portion (H) of the address.
+        > Network Part
+        - The network part  specifies the unique number that is assigned to your network
+        - The network part also identifies the class of network that is assigned.
+        
+        > Host Part
+        - This is the part of the IPv4 address that you assign to each host
+        - The host part uniquely identifies the machine on your network
+        <i>
+            Important Notes:
+            - For each host on your network, the network part of the address is the same, but the host part must be different
+            - You can test this:
+                  - You should always be able to ping 127.0.0.1, which points to yourself
+                    - Class D addresses are reserved for multicasting
+                    - Class E addresses are reserved for future use (they should not be used for host addresses)
+            - Addresses beginning with 01111111, or 127 decimal, are reserved for loopback and for internal testing on a local machine            
+        </i>
+        </pre></div>
+
+        <div class="cardi"><h2 id="sub15">Subnet Mask</h2>
+        <pre>
+- A subnet mask is a number that defines a range of IP addresses available within a network.
+- A single subnet mask limits the number of valid IPs for a specific network.
+- Multiple subnet masks can organize a single network into smaller networks (called subnetworks or subnets).
+- Systems within the same subnet can communicate directly with each other, while systems on different subnets must communicate through a router.
+
+<img src="part 3/7/4.png" class="img2">
+        </pre></div>
+
+        <div class="cardi"><h2 id="sub16">Gateway Address</h2>
+        <pre>
+- The gateway address (or default gateway) is a router interface connected to the local network that sends packets out of the local network.
+- The gateway has a physical and logical address.
+
+<img src="part 3/7/5.png" class="img2">
+            <i>Note: Network professionals use the First or Last IP Address in a particular network or subnetwork as Gateway addresses.</i>
+        </pre></div>
+        </div>
+        </div>
+
+        <div class="lessons">
+            <h1 style="text-align: center; color: white">LESSONS LIST</h1>
+            <br>
+            <div class="container">
+                <a class="button" href="lesson1.html">LESSON 1</a>
+                <a class="button" href="lesson2.html">LESSON 2</a>
+                <a class="button" href="lesson3.html">LESSON 3</a>
+                <a class="button" href="lesson4.html">LESSON 4</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
+  

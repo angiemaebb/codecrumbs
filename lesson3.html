@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+    </head>
+    <body>
+
+        <div class="header">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+            <a href="index.html" class="title">CodeCrumbs</a>
+            <div class="header-right" style="margin-top: 15px;">
+            <a href="index.html">Home</a>
+            <a href="lesson1.html">Lesson 1</a>
+            <a href="lesson2.html">Lesson 2</a>
+            <a class="active" href="lesson3.html">Lesson 3</a>
+            <a href="lesson4.html">Lesson 4</a>
+            <a href="lesson5-1.html">Lesson 5</a>
+          </div>
+        </div>
+        
+        <div class="intro">
+            <div class="text-box" style="margin-left: 50px;">
+                <h1>LESSON 3:</h1>
+                <h1>Number Systems</h1><br>
+                <p>The number system is a set of rules and symbols used to represent numbers. While the decimal system is common, digital devices like computers use the binary system. The number system is a method of representing digits in a computer system. Computers use a binary system (base 2) composed of bits (0s and 1s) to represent data. The total number of digits in a number system is called its base or radix, indicated as a subscript after the number</p>
+            </div>
+            <img src="lesson 3/number systems.jpg" alt="number systems" class="img">
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <h3>TABLE OF CONTENTS</h3>
+            <br><b><a href="#heading1"> Counting Numbers </a>
+            <a href="#heading2"> Binary Numbers</a>
+            <a href="#heading3"> Octal Numbers </a>
+            <a href="#heading4"> Decimal Numbers </a>
+            <a href="#heading5"> Hexadecimal Numbers </a></b>
+        </div>
+
+        <div class="text-box2">
+            <br><br><div>
+                <div>
+                <h1 id="heading1">Counting Numbers</h1>
+                <pre>
+Types of numbers:
+1. Natural Numbers - A set of numbers that is used to count certain objects are called natural numbers. Such a set of numbers starts with 1(one)and goes on till infinity.
+It is to be noted that natural numbers include only positive integers.
+2. Whole Numbers - A set of numbers that includes all the positive integers and zero.
+3. Integers - An integer is defined as such a whole number that can assume either positive, negative or no value at all. 
+4. Real Numbers - Such numbers which include both rational numbers and their irrational counterparts.
+5. Rational Numbers - Such numbers can be expressed in the form of a fraction.
+6. Irrational Numbers - Such numbers cannot be expressed as a fraction.
+
+Additional numbers:
+1. Even Numbers - Such numbers that can be divided by 2 are called even numbers.
+    Example: 2, 4, 6, 8, …, 1024, etc.
+2. Odd Numbers - Such numbers that are not divisible by 2 are called odd numbers.
+    Example: 3, 5, 7, 10, …, 1345, etc.
+3. Prime Numbers - Such a number that can be divided exactly by itself or 1.
+    Example: 5, 7, 13, 23, etc.
+4. Composite Numbers - Such numbers as having multiple factors other than 1 and the number itself.
+    Example: 16, 20, 50, etc.
+                </pre>
+                </div>
+                <div><img src="lesson 3/real numbers.PNG" alt="real numbers" class="img2"></div>
+                <br>
+            </div>
+
+            <div>
+                <p style="text-align: center;"><i>*The left-most bit is known as Most Significant Digit (MSD) and the right-most is known as the Least Significant Digit (LSD).</i></p>
+                <img src="lesson 3/note.PNG" alt="lsd and msd" class="img2">
+            </div>
+
+            <br><hr><br>
+            <div>
+                <h1 id="heading2">Binary Numbers</h1>
+                <pre>
+- Base or radix of 2
+- It only uses 0 and 1, known as bits; corresponds to off and on state, consecutively, in digital circuits
+- Positional system wherein each position is assigned a specific weight
+- Has two parts: the integral part and the fractional part separated by a radix point
+- Arithmetic operations can be performed on binary numbers; much simpler than decimal arithmetic
+- Has Most Significant Bit (MSB) and Least Significant Bit (LSB)
+
+Advantages / Uses:
+> Simple representation of data - only 0 (off) and 1 (on); ideal for digital systems
+> Compatibility with Digital Technology - most efficient way to process information electronically
+> Efficient Boolean Logic Representation  - foundational for boolean algebra and logic gates, which are essential for building and operating processors and memory in computing
+> Data Storage - used in various data formats (ex. Images, text, audio) in computing
+                </pre>
+                <div class="contained">
+                    <img src="lesson 3/binary1.png" alt="binary to octal" class="img2">
+                    <img src="lesson 3/binary2.png" alt="binary to hexadecimal" class="img2">
+                </div>
+            </div>
+
+            <br><hr><br>
+            <div>
+                <h1 id="heading3">Octal Numbers</h1>
+                <pre>
+- Base 8
+- Eight symbols (0, 1, 2, 3, 4, 5, 6, 7)
+- Positional system
+- Has two parts: the integral part and the fractional part separated by a radix point
+- Main advantage this is that octal numbers are used for entering binary data and displaying certain information in a shorter way in any digital transmission system
+
+Advantages / Uses:
+> Shorthand for Binary - more compact way of representing binary numbers because three bits correspond to one octal digit
+> Used in Legacy System - some older computing systems, such as early mainframes, used octal to represent machine instructions, memory addresses, or permissions
+> Reduces Errors in Binary Handling - grouping binary digits into octal digits help reduce the likelihood of errors in reading long binary sequences
+                </pre>
+                <div class="container">
+                    <img src="lesson 3/octal1.png" alt="octal to binary" class="img2">
+                    <img src="lesson 3/octal2.png" alt="octal to hexadecimal" class="img2">
+                </div>
+            </div>
+
+            <br><hr><br>
+            <div>
+                <h1 id="heading4">Decimal Numbers</h1>
+                <pre>
+- Also known as international system of numbers
+- Called base 10 or denary number system
+- Has two parts: the integral part and the fractional part separated by a radix point
+- Positional decimal systems include a zero and use symbols (called digits) to ten values (0, 1, 2, 3, 4, 5, 6, 7, 8, and 9) to represent any number, no matter how large or how small
+
+Advantages / Uses:
+> Intuitive for humans - ideal for general arithmetic because it matches our ten-finger counting system
+> Scientific Notation - most financial, measurement, and scientific systems around the world use decimal, making it the standard for accounting, engineering, and everyday transactions
+> Easy to perform basic arithmetic - easier to perform calculations manually without the need for conversions
+                </pre>
+                <div class="container">
+                    <img src="lesson 3/decimal1.png" alt="decimal to other base systems" class="img2">
+                    <img src="lesson 3/decimal2.png" alt="Other Base system to decimal system" class="img2">
+                </div>
+            </div>
+
+            <br><hr><br>
+            <div>
+                <h1 id="heading5">Hexadecimal Numbers</h1>
+                <pre>
+- Very popular in computer uses
+- Base 16
+- Sixteen symbols (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+- Has two parts: the integral part and the fractional part separated by a radix point
+- Positional system
+
+Advantages / Uses:
+> Memory Addresses - commonly used to represent memory addresses in programming and debugging
+> Human-readable for programmers - makes it much easier for humans to interpret, especially in tasks like defining memory addresses or data manipulation
+> Color Codes - in web design and graphic design, hexadecimal is used to represent color codes
+> Compact representation of binary - four binary bits correspond to a single hexadecimal digit
+                </pre>
+                <div class="container">
+                    <img src="lesson 3/hexadecimal1.png" alt="hexadecimal to binary" class="img2">
+                    <img src="lesson 3/hexadecimal2.png" alt="hexadecimal to octal" class="img2">
+                </div>
+            </div>
+
+            <br><br><div class="card3">
+                <h3>For more information, visit these references: </h3>
+                <pre>
+GeeksForGeeks. (2021a, September 20). How many types of number systems are there? GeeksforGeeks. 
+<a href="https://www.geeksforgeeks.org/how-many-types-of-number-systems-are-there/" target="_blank" style="text-decoration: underline;">https://www.geeksforgeeks.org/how-many-types-of-number-systems-are-there/</a>
+
+GeeksForGeeks. (2021b, September 27). What is the importance of the number system? GeeksforGeeks. 
+<a href="https://www.geeksforgeeks.org/what-is-the-importance-of-the-number-system/" target="_blank" style="text-decoration: underline;">https://www.geeksforgeeks.org/what-is-the-importance-of-the-number-system/</a>
+
+Latif, S., Khan, F., Qayyum, J., & Lai, M. (2011). Novel Approach to the Learning of Various Number Systems. 
+<a href="https://doi.org/10.5120/3116-4283" target="_blank" style="text-decoration: underline;">https://doi.org/10.5120/3116-4283</a>
+
+Mad for Math. (2024). HEXADECIMAL TO OCTAL CONVERTER (WITH STEPS). Madformath.com. 
+<a href="https://madformath.com/calculators/digital-systems/base-converters/hexadecimal-to-octal-converter-with-steps/hexadecimal-to-octal-converter-with-steps" target="_blank" style="text-decoration: underline;">https://madformath.com/calculators/digital-systems/base-converters/hexadecimal-to-octal-converter-with-steps/hexadecimal-to-octal-converter-with-steps</a>
+
+Mahat, S., & Patil, M. (2020). Number System for Digital Computers. <a href="https://doi.org/IX(4):3440-3449" target="_blank" style="text-decoration: underline;">https://doi.org/IX(4):3440-3449</a>
+
+Testbook. (2023, May 17). Types of Number System in Computer:Binary, Decimal, Octal & Hexa. Testbook. 
+<a href="https://testbook.com/digital-electronics/types-of-number-system" target="_blank" style="text-decoration: underline;">https://testbook.com/digital-electronics/types-of-number-system</a>
+
+TutorialsPoint. (2019). Number System Conversion - Tutorialspoint. Tutorialspoint.com. 
+<a referrerpolicy="https://www.tutorialspoint.com/computer_logical_organization/number_system_conversion.htm" target="_blank" style="text-decoration: underline;">https://www.tutorialspoint.com/computer_logical_organization/number_system_conversion.htm</a>
+                </pre>
+
+        </div>
+        </div>
+        
+        <div class="lessons">
+            <h1 style="text-align: center; color: white">LESSONS LIST</h1>
+            <br>
+            <div class="container">
+                <a class="button" href="lesson1.html">LESSON 1</a>
+                <a class="button" href="lesson2.html">LESSON 2</a>
+                <a class="button" href="lesson4.html">LESSON 4</a>
+                <a class="button" href="lesson5-1.html">LESSON 5</a>
+            </div>
+        </div>
+    </body>
+</html>
+  

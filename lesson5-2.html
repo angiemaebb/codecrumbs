@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+    </head>
+    <body>
+
+        <div class="header">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+             <a href="index.html" class="title">CodeCrumbs</a>
+             <div class="header-right" style="margin-top: 15px;">
+            <a href="index.html">Home</a>
+            <a href="lesson1.html">Lesson 1</a>
+            <a href="lesson2.html">Lesson 2</a>
+            <a href="lesson3.html">Lesson 3</a>
+            <a href="lesson4.html">Lesson 4</a>
+            <a class="active" href="lesson5-1.html">Lesson 5</a>
+          </div>
+        </div>
+        
+        <div class="intro">
+            <div class="text-box" style="margin-left: 50px;">
+                <h1>LESSON 5 (part2):</h1>
+                <h1>Networking Devices</h1><br>
+                <p>Networking devices are hardware components essential for establishing, managing, and securing communication within a network. They facilitate the exchange of data between devices like computers, servers, and mobile devices.</p>
+            </div>
+            <img src="part 1/computer network.jpg" alt="computer network" class="img">
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <h3>TABLE OF CONTENTS</h3>
+            <br><b><a href="#heading1"> Network Interface Card </a>
+            <a href="#heading2"> HUB </a>
+            <a href="#heading3"> Ethernet Switch </a></b>
+            <i><a href="#sub1"> > Role of Switches </a>
+                <a href="#sub2"> > Form Factors of Switches </a>
+                <a href="#sub3"> > Configuration Options </a></i> 
+            <b><a href="#heading4"> Router </a></b>
+            <i><a href="#sub4"> > Works of Routers </a>
+                <a href="#sub5"> > Wireless Router </a>
+                <a href="#sub6"> > Wi-Fi Meaning </a>
+                <a href="#sub7"> > Wireless Routers </a></i>
+            <b><a href="#heading5"> Cabling </a></b>
+            <i><a href="#sub8"> > UTP CAT5 24 AWG </a>
+                <a href="#sub9"> > RJ-45 connectors </a>
+                <a href="#sub10"> > Cable Types </a>
+                <a href="#sub11"> > Cable Interference </a>
+                <a href="#sub12"> > Noise Prevention </a>
+                <a href="#sub13"> > Cable Tools </a> </i>
+        </div>
+
+        <div id="myNetnav" class="netnav">
+            <a href="lesson5-1.html" id="part1">part  1</a>
+            <a style="background-color: white; color: #a832f7;" href="lesson5-2.html" id="part2">part  2</a>
+            <a href="lesson5-3.html" id="part3">part  3</a>
+        </div>
+
+        <div class="text-box2">
+            <br><br>
+            <div>
+                <h1 id="heading1">(NIC) Network Interface Card</h1>
+                <pre>
+- A Network Interface Card, commonly referred to as a NIC, is a device that allows computers to be joined together in a LAN, or Local Area Network.
+    <i>* Networked computers communicate with each other using a given protocol or agreed-upon language for transmitting data packets between the different machines, known as nodes.</i>
+- The Network Interface Card acts as the liaison for the machine to both send and receive data in a LAN.                    
+                </pre>
+                <div class="cardi">
+                <div class="card-container">
+                    <div><img src="part 2/ethernet nic.png" alt="ethernet nic rj 45" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Ethernet NIC RJ 45</b>
+- Network Interface Card with an RJ45 port, used for connecting to Ethernet networks via twisted-pair cables.
+                        </pre>
+                    </div> 
+                </div>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/bnc.png" alt="ethernet nic bnc-coax" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Ethernet NIC BNC-Coax</b>
+- Network Interface Card with a BNC (Bayonet Neill-Concelman) connector, used for older Ethernet networks with coaxial cables.
+                        </pre>
+                    </div> 
+                </div>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/wireless nic.png" alt="wireless nic" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Wireless NIC</b>
+- Network Interface Card that connects devices to wireless (Wi-Fi) networks without cables.
+                        </pre>
+                    </div> 
+                </div>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/fiber optic.png" alt="fiber optic nic" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Fiber Optic NIC</b>
+- Network Interface Card designed to connect to fiber optic networks, providing high-speed data transfer through light signals in
+fiber optic cables
+                        </pre>
+                    </div> 
+                </div></div>
+
+            <br><hr><br>    
+            <div>
+                <h1 id="heading2">HUB</h1>
+                <pre>
+- It is the basic connector for a network, as a junction for the computers to connect together.
+- If all the cards are of the same speed, 10Mbps vs. 10/100Mbps cards, buying a simple hub to match their speed is ideal and most economical.
+- It is a fairly unsophisticated broadcast device
+<i> * Hubs do not manage any of the traffic that comes through them.
+    * A hub is not an intelligent device, unlike an ethernet switch.
+</i>
+                </pre>
+                <div class="container">
+                    <img src="part 2/hub1.png" alt="4-port hub" class="img2">
+                    <img src="part 2/hub2.png" alt="octal to hexadecimal" class="img2">
+                </div>
+            </div>
+
+            <br><hr><br>
+            <div>
+                <h1 id="heading3">Ethernet Switch</h1>
+                <pre>
+- Switches intelligently route data between network segments, offering greater efficiency than hubs. They enable devices with mismatched speeds to
+communicate effectively and are crucial for large networks and data centers.          
+                </pre>
+
+                <br><div class="cardi"><h2 id="sub1">Role of Switches in a Network</h2>
+                <pre>
+- Switches serve as network connection points for hosts at the network's edge.
+- In hierarchical network architectures, switches are also used deeper in the network to connect edge switches.
+- Commercial switches may have built-in or modular interfaces to connect diverse network types like Ethernet, Fibre Channel, RapidIO, ATM, ITU-T G.hn, and 802.11.
+- Connectivity is possible across different network layers:
+    - Layer 2: Handles bandwidth-shifting within the same technology.
+    - Layer 3: Facilitates interconnecting diverse technologies (e.g., Ethernet and token ring) via routing, typically performed by routers.
+- Modern switches may support Power over Ethernet (PoE) to supply power to devices like VoIP phones and wireless access points without separate power sources.
+- Redundant power circuits in switches, connected to uninterruptible power supplies (UPS), ensure continued device operation during power failures.
+                </pre></div>
+
+                <div class="cardi"><h2 id="sub2">Form Factors of Switches</h2>
+                <pre>
+Switches come in various form factors for different environments:
+> Stand-alone desktop units: Used in home or office settings.
+> Rack-mounted switches: Installed in equipment racks or enclosures, available as standalone, stackable, or large chassis units with swappable line cards.
+> DIN rail-mounted switches: Designed for industrial environments.
+> Small installation switches: Mounted in cable ducts, floor boxes, or communication towers, often used in fiber-to-the-office setups.
+                </pre>
+
+                <div class="container">
+                    <img src="part 2/rack mounted.png" alt="rack" class="img4">
+                    <img src="part 2/24 port.png" alt="24 port switch" class="img4">
+                    <img src="part 2/48 port.png" alt="48 port switch" class="img4">
+                </div>
+                <div class="container">
+                    <img src="part 2/fixed.png" alt="fixed switches" class="img4">
+                    <img src="part 2/modular.png" alt="modular platform" class="img4">
+                    <img src="part 2/stackable.png" alt="stackable switches" class="img4">
+                </div>
+            </div></div>
+
+            <div class="cardi"><h2 id="sub3">Configuration Options</h2>
+            <pre>
+<b>Unmanaged Switches:</b>
+- No configuration interface or options.
+- Plug and play.
+- Least expensive, typically used in small office/home office environments.
+- Available in desktop or rack-mounted formats.
+
+<b>Managed Switches:</b>
+- Offer configurable management options.
+- Can be managed via CLI, SNMP, or a web interface.
+- Allow configuration of features like Spanning Tree Protocol, port mirroring, port bandwidth, and VLANs.
+
+<b>Smart Switches:</b>
+- A type of managed switch with a limited set of management features.
+- Typically cheaper than enterprise switches.
+
+<b>Enterprise Managed Switches:</b>
+- Full management features (CLI, SNMP, web interface).
+- Allow advanced configurations, such as backup, restore, and detailed optimizations.
+- More expensive and commonly used in larger networks where centralized management is important.
+- Stackable versions are available for more extensive networks.
+
+<b>Web-Managed Switches:</b>
+- A middle ground between unmanaged and managed switches.
+- Provide basic configuration via a web interface, but no CLI access.
+- Less expensive than fully managed switches.
+            </pre></div>
+
+            <br><hr><br>
+            <div>
+                <h1 id="heading4">Router</h1>
+                <p>- Routers direct data packets between different networks, acting as gateways. They analyze data packets and route them efficiently while providing security by controlling data flow.</p>
+                <br>
+
+                <div class="cardi"><h2 id="sub4">Works of the Routers</h2>
+                <pre>
+- Essential for routing traffic between networks, facilitating the movement of data packets.
+- Acts as a gateway between networks, contributing to both data direction and network security.
+
+Main purposes:
+1. Directing Data: Ensures data reaches the correct destination (e.g., email to the right provider and recipient).
+2. Security: Prevents unauthorized data distribution, protecting network performance (e.g., stopping large files from being sent to all machines on a network).
+                </pre><br>
+                <p style="text-align: center;">Form Factors of Routers</p>
+                <img src="part 2/form factors routers.png" alt="form factors of routers" class="img2">
+                <br>
+                <p style="text-align: center;">Routers in a Network Rack</p>
+                <img src="part 2/routers in a rack.jpg" alt="Routers in a Network Rack" class="img2">
+                <br>
+                <p style="text-align: center;">Sample LAN and WAN connections</p>
+                <img src="part 2/lan wan.jpg" alt="Routers in a Network Rack" class="img2">
+            </div>
+                
+                <div class="cardi"><h2 id="sub5">Wireless Router</h2>
+                <pre>
+- Wireless Router (Wi-Fi Router): Combines the functions of a router and a wireless access point, providing access to the Internet or a private network.
+- Usage: Commonly used in homes, connecting users to the internet via cable or xDSL from ISPs.
+- Functionality:
+    - Replaces wires with wireless radio signals.
+    - Can function as a router, switch, and access point.
+    - Supports both wired and wireless networks, or a mixed setup.
+- Design: Typically small boxes with antennas to improve signal range.
+- Limitations: Signal strength weakens with distance from the router.
+- Capacity: Supports varying numbers of users, from a few to hundreds, depending on the model.                    
+                </pre></div>
+
+                <div class="cardi"><h2 id="sub6">What does Wi-Fi mean?</h2>
+                <pre>
+- A wireless networking technology using radio waves to provide high-speed Internet access.
+- Wi-Fi is a brand name created by marketing firm Interbrand for the founding member of the Wireless Ethernet Compatibility Alliance (now called the Wi-Fi Alliance).
+
+- Wi-Fi Hotspot: A location where Wi-Fi-enabled devices can connect to the Internet.
+- Wi-Fi Standards: Defined by the IEEE 802.11 standard, with amendments over time that support various frequencies, bandwidths, and channels.
+- Wireless Access Point (WAP or AP): Allows wireless devices to connect to the network.
+- Function: Similar to an amplifier, it extends the Wi-Fi range, enabling devices to connect from farther distances.
+- Additional Roles: Provides data about devices on the network, enhances security, and serves other practical purposes.
+                </pre></div>
+
+                <div class="cardi"><h2 id="sub7">Wireless Router Types</h2><br>
+                <div class="card-container">
+                    <div><img src="part 2/wireless router.png" alt="desktop wifi router" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Desktop Wi-Fi Router</b>
+- Common way to connect to the Internet wirelessly.
+- Typically small boxes with antennas to broadcast the signal.
+- Signal strength weakens with distance, often requiring multiple routers for extended coverage.
+                        </pre>
+                    </div> 
+                </div>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/mobile hotspot.png" alt="mobile hotspot" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Mobile Hotspot</b>
+- Feature on smartphones that allows sharing of the wireless network connection with other devices, enabling Internet access.
+                        </pre>
+                    </div> 
+                </div>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/portable wifi.png" alt="portable wifi" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Portalbe Wi-Fi</b>
+- A type of mobile hotspot, a small device that broadcasts a 3G or 4G signal for multiple devices to use.
+- Offered by cellular carriers, with monthly costs based on the selected data plan.
+- Provides a more reliable internet connection compared to public Wi-Fi hotspots.
+                        </pre>
+                    </div> 
+                </div>
+
+                <pre>
+
+                </pre>
+            </div></div>
+
+            <br><hr><br>
+            <div>
+                <h1 id="heading5">Cabling</h1>
+                <pre>
+- Nearly all hubs and network cards sold today are what are often called 10base-T or 100base-T.
+    - That simply means you use cables called UTP Cat5 24 AWG, they have connector ends on them that resembles a telephone connector.
+    - The telephone connector is actually smaller, called an RJ-11 connector, while a 10base-T connector is an RJ-45.
+    - But, they are nearly alike, except for size.
+- UTP cable can only support the distance up to 100 meters, more than that a repeater or a hub will be useful.
+                </pre>
+                <div class="cardi"><h2 id="sub8">UTP CAT5 24 AWG</h2>
+                <pre>
+- It stands for the Unshielded Twisted Pair Category 5 with 24 American Wire Gauge
+- This is the type of cable which is commonly used in networking.
+- Although there are many cables out in the market, this is the most suitable for building a network.                  
+                </pre>
+                <div class="container">
+                    <img src="part 2/catyellow.png" alt="cat5 yellow" class="img4">
+                    <img src="part 2/catblue.png" alt="cat5 blue" class="img4">
+                    <img src="part 2/catgrey.png" alt="cat5 grey" class="img4">
+                </div>
+                <br><img src="part 2/cat.jpg" alt="cat" class="img2"></div>
+
+                <div class="cardi">
+                <h2 id="sub9">RJ-45 Connectors</h2>
+                <pre>
+- RJ-45 is short for Registered Jack45, an eight-wire connector used commonly to connect computers onto Local Area Networks (LANs), especially Ethernets.
+- RJ-45 connectors look similar to the ubiquitous RJ-11 connectors used for connecting telephone equipment, but they are somewhat wider.
+
+<i> Notes:
+    * You can buy this terminated cable in some computer shops but they are only sold on a specific length.
+    * If you would like to create one for yourself (which is very easy, I bet you would like to try one), just follow the given steps in terminating cables.
+    * This cable will be terminated from end to end with an RJ-45, therefore you must understand the color codes of each wire.
+    * In a Local Area Network, you must understand that there are different cable runs that you are going create, the STRAIGHT THROUGH, the CROSSOVER, and the ROLLOVER cables.
+    * We do not roll over cable as of now.
+</i>                    
+                </pre>
+                <img src="part 2/connectors.PNG" alt="connectors" style="width: 100%; border-radius: 20px; ">
+                </div>
+
+                <div class="cardi"><h2 id="sub10">Cable Types</h2>
+                <div class="card3"><h3>1. Straight-Through Cable (ST)</h3>
+                <pre>
+- It is a type of twisted-pair copper wire cable for Local Area Network (LAN) use for which the RJ-45 connectors at each end have the same pinout (i.e., the arrangement of conductors).
+- It is commonly referred to as patch cable.
+- It is used to connect computers and other end-user devices (e.g., printers) to networking devices such as hubs and switches.
+- In short, this type of cable is used to connect DIFFERENT devices.                    
+                </pre>
+
+                <br>
+                <pre>
+        <b>> T-568A Standard</b>
+        - TIA/EIA-568-A-1995 (Commercial Building Telecommunications Wiring Standards)
+        - It defines a standard for building cable system for commercial buildings that support data networks, voice, and video.
+        - It also defines the technical and performance criteria for cabling.                    
+                </pre>
+                <img src="part 2/Using T-568A Standard.PNG" alt="t-568a standard" style="width: 100%; border-radius: 20px; ">
+
+                <br><br><br>
+                <pre>
+        <b>> T-568B Standard</b>
+        - TIA 568-B.1-2000 (Commercial Building Telecommunications Wiring Standard)
+        - The year 2000 update packages all the previous addendums and service updates into a new release and, most important, specifies that Category 5E cable is the preferred
+        cable type that can provide minimum acceptable performance levels.
+        - Several addendums were also released that specify technical information for 100-ohm twisted-pair cable, shielded twisted-pair cable, and optical fiber cable.                  
+                </pre>
+                <img src="part 2/Using T-568B Standard.PNG" alt="t-568b standard" style="width: 100%; border-radius: 20px; "></div>
+
+                <br>
+                <div class="card3"><h3>2. Crossover Cable</h3>
+                <pre>
+- It is used also in LANs, basically, and is often used in home networks when connecting two Ethernet computers without a hub.
+- It has its send and receives wires crossed.
+- It is a type of cable that is used to connect SAME or SIMILAR devices such as PC to PC, Hub to Hub, or Switch to Switch.                    
+                </pre>
+                <img src="part 2/crossover.PNG" alt="crossover cable" style="width: 100%; border-radius: 20px; ">
+                </div></div>
+
+                <div class="cardi">
+                <h2 id="sub11">Cable Interference</h2>
+                <h3>1. (EMI) Electro-Magnetic Interference</h3>
+                <pre>
+- EMI is interference caused by electrical or magnetic radiation from nearby sources such as power cables, heavy machinery, or fluorescent lighting.
+- Effects: Causes disruptions in signal transmission or reception, leading to Radio Frequency Interference (RFI).
+- Prevention:
+    - Keep network cables at least 12 inches away from electrical cables.
+    - Use shielded cables instead of Unshielded Twisted Pair (UTP) if necessary.
+- Impact: While it may not significantly affect signal quality, it can be problematic if field strength exceeds 1 Volt per meter.
+                </pre>
+
+                <br><h3>2. Noise</h3>
+                <pre>
+- Noise is unwanted electrical interference that distorts or disrupts the signal. It can be either temporary (transient) or constant.
+- Impact: Affects the clarity of the desired signal, much like static or interference on a radio.
+                </pre>
+
+                <br><h3>3. Crosstalk</h3>
+                <pre>
+- Crosstalk is interference where signals from one cable induce EMI in an adjacent cable.
+- Causes: Result from capacitive, inductive, or conductive coupling between circuits or channels.
+- Prevention:
+    - Twisting the wires in twisted-pair cables helps reduce crosstalk.
+    - Additional shielding or physical separation between cables can further minimize interference.
+- Impact: Significant in structured cabling, audio electronics, and other communication systems.
+                </pre>
+            </div>
+
+            <div class="cardi">
+                <h2 id="sub12">How to Prevent Noise in Cables?</h2>
+                <h3>1. Shielding</h3>
+                <pre>
+- Shielded cables are used to protect the data being transferred through the cable from degradation by EMI exposure, which is common in data
+centers, industrial settings, offices, and other settings where computer technology, electrical equipment, or electronic equipment is in heavy use.
+                </pre>
+                <br>
+                <h3>2. Cancellation</h3>
+                <pre>
+- The twisting of wires causes EMI and crosstalk signals to cancel itself out.
+- The main difference between the different categories of UTP is the quality of the copper that is used to make the conductors and how tightly twisted the wires are together.
+                </pre>
+            </div>
+
+            <div class="cardi">
+                <h2 id="sub13">Toolset Used For Terminating Cables</h2>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/crimping.png" alt="crimping" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Crimping Tool</b>
+- A crimping tool is a tool designed to crimp or connect a connector to the end of a cable.
+- Examples:
+    Network cables and phone cables are created using a crimping tool to connect the RJ-45 and RJ-11 connectors
+    to the end of the cable.
+                        </pre>
+                    </div> 
+                </div>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/cutter pliers.png" alt="cutter pliers" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Cutter Pliers</b>
+- These are pliers that are intended for the cutting of wire (they are generally not used to grab or turn anything).
+                        </pre>
+                    </div> 
+                </div>
+                <br>
+                <div class="card-container">
+                    <div><img src="part 2/wire stripper.png" alt="Wire Stripper" class="img3"></div>
+                    <div style="margin-left: 25px;">
+                        <pre>
+<b>Wire Stripper</b>
+- It is a pair of opposing blades much like scissors or wire cutters.
+- The center notch or hollow makes it easier to cut the insulation without cutting the wire.
+- This type of wire stripper is used by rotating it around the insulation while applying pressure in order to
+make a cut around the insulation.
+                        </pre>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="lessons">
+            <h1 style="text-align: center; color: white">LESSONS LIST</h1>
+            <br>
+            <div class="container">
+                <a class="button" href="lesson1.html">LESSON 1</a>
+                <a class="button" href="lesson2.html">LESSON 2</a>
+                <a class="button" href="lesson3.html">LESSON 3</a>
+                <a class="button" href="lesson4.html">LESSON 4</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
+  
